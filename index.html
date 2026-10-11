@@ -1,50 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Learning Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
+    <header class="text-center py-5">
+        <div class="container">
+            <h1>My Portfolio</h1>
+        </div>
     </header>
-    <main>
-        <section id="แนะนำตัว">
-        <h2>About Me</h2>
-        <img src="media/รูปนักศึกษา_6909617786.jpg" width="200" hieght="250">
-        <p>My Name is Pongsapat Poomnoom</p>
-        <p>My Nickname is Jiggo</p>
-        <p>My Student ID 6909617786</p>
-        <p>I Am Student At <a href="https://tu.ac.th/" target="_blank">Thammasat University</a></p>
+    <main class="container py-4">
+        <section id="แนะนำตัว" class="mb-5">
+            <h2>About Me</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-12 col-md-4 text-center">
+                    <img
+                        src="media/รูปนักศึกษา_6909617786.jpg"
+                        alt="รูปนักศึกษา"
+                        class="img-fluid profile-img">
+                </div>
+                <div class="col-12 col-md-8">
+                    <p>My Name is Pongsapat Poomnoom</p>
+                    <p>My Nickname is Jiggo</p>
+                    <p>My Student ID is 6909617786</p>
+                    <p>I am a Computer Science student at
+                        <a href="https://tu.ac.th/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Thammasat University
+                        </a>
+                    </p>
+                </div>
+            </div>
         </section>
-        <section id="whatI">
-        <h2>What I Built</h2>
-        <p>งาน A1 นี้เป็นงานสร้างเว็บไซต์ Portfolio ของผมเอง</p>
-        <p>ในนี้จะมีรูปภาพผมเอง และข้อมูลต่างๆ เกี่ยวกับตัวผม</p>
-        <p>และข้อมูลเกี่ยวกับการสร้างเว็บไซต์</p>
-        <p>Client คือ browser ที่ทำหน้าที่อ่านโค้ดและแสดงไฟล์ </p>
-        <p>งานนี้ไม่มี Server เพราะเปิดจากคอมตัวเอง</p>
+        <h2>My Portfolio</h2>
+        <section id="myport1" class="mb-5">
+            <h3>การบ้านของรายวิชา</h3>
+            <p>Title: CS100 A1:My First Learning Portfolio</p>
+            <p>Type: Course Assignment</p>
+            <p>Date: 30 Aug 2026</p>
+            <p>Role: Individual Developer</p>
+            <p>Description: พัฒนาเว็บไซต์ Learning Portfolio หน้าเดียวด้วย HTML และ CSS</p>
+            <p>Skills: HTML, CSS, Semantic HTML</p>
+            <p>Reflection: ตอนทำ My First Learning Portfolio ได้ลองเขียนโค้ดด้วยตัวเองครั้งแรก ตอนทำ html ก็งงๆ พอมาเจอ css แล้วงงกว่าเดิม </p><p>แต่ผมก็สร้างมันขึ้นมาได้ รู้สึกภูมิใจมาก 
+                ตอนแรกก็ไม่เข้าใจเรื่อง syntax แล้วก็ให้ ai ช่วยก็เข้าใจขึ้นเยอะเลย</p>
+            <p>Evidence:  
+                <a href="https://github.com/JiggoPongsapat01/A1-My-First-Learning-Portfolio.git"
+                target="_blank"
+                rel="noopener noreferrer">GitHub Repository</a>
         </section>
-        <section id="howI">
+        <section id="myport2" class="mb-5">
+            <h3>เข้าร่วมการแข่งขัน Freshy Games2026</h3>
+            <p>Title: เข้าร่วมการแข่งขันกีฬาฟุตบอล</p>
+            <p>Type: Competition</p>
+            <p>Date: 9 Oct 2026</p>
+            <p>Role: นักกีฬาฟุตบอลตำแหน่ง แบ็คขวา</p>
+            <p>Description: เล่นฟุตบอลรายการ Freshy Games2026</p>
+            <p>Skills: Teamwork </p>
+            <p>Reflection: ตอนได้ลงสนามครั้งแรกรู้ตื่นเต้นมากๆ ผมตั้งใจซ้อมมากๆ ถึงสุดท้ายจะตกรอบก็ไม่เป็นไร</p>
+            <p>Evidence:</p>
+                <img src="media/Activity.png" 
+                alt="รูปแข่ง Freshy">
+        </section>
+        <section id="whatI" class="mb-5">
+            <h2>What I Built</h2>
+            <p>งาน A1 นี้เป็นงานสร้างเว็บไซต์ Portfolio ของผมเอง</p>
+            <p>ในเว็บไซต์ประกอบด้วยแนะนำตัวและข้อมูลต่างๆ เกี่ยวกับตัวผม</p>
+            <p>และข้อมูลเกี่ยวกับการสร้างเว็บไซต์</p>
+            <p>Client คือ browser ที่ทำหน้าที่อ่านและแสดงไฟล์</p>
+            <p>งานนี้ไม่มี Server เพราะเปิดจากคอมส่วนตัว</p>
+        </section>
+        <section id="howI" class="mb-5">
             <h2>How I Built It</h2>
             <p>สร้างเว็บไซต์ด้วย HTML และตกแต่งผ่าน CSS</p>
-            <p>เรียนรู้วิธีทำจากสไลด์ CS100_Module0203--Basic_HTML_CSS.pdf</p>
-            <p>และใช้ ChatgptAI ในการช่วยเหลือด้านต่าง ๆ</p>
+            <p>เรียนรู้วิธีการจากไฟล์ CS100_Module0203--Basic_HTML_CSS.pdf</p>
+            <p>และใช้ ChatGPT ในการช่วยเหลือด้านต่างๆ</p>
         </section>
-        <section id="reflection">
+        <section id="reflection" class="mb-5">
             <h2>Reflection</h2>
             <ol>
-                <li><p>เป็นความรู้ใหม่ที่ได้สร้างเว็บไซต์ซึ่งเป็นเรื่องยากสำหรับผม</p>
+                <li>
+                    <p>เป็นความรู้ใหม่ที่ได้สร้างเว็บไซต์ขึ้นมา เป็นครั้งแรกจากการลงมือทำเอง</p>
                     <p>ผมพยายามตั้งใจเรียนในห้อง หาความรู้จากคลิปวิดีโอ</p>
-                    <p>และถาม AI เพื่อให้เข้าใจมากขึ้น</p></li>
-                <li><p>จากการทำงานนี้ ทำให้ผมเข้าใจการใช้ Syntax มากขึ้น</p></li>
-                <li><p>หากได้เรียนรู้มากขึ้น อยากให้เว็บไซต์มีฟังก์ชันที่เจ๋งๆ มากขึ้น</p></li>
+                    <p>และถาม AI เพื่อให้เข้าใจมากขึ้น</p>
+                </li>
+                <li>
+                    <p>จากการทำงานนี้ ทำให้เข้าใจ Syntax มากขึ้น</p>
+                </li>
+                <li>
+                    <p>หากได้เรียนรู้มากขึ้นอยากทำเว็บไซต์ที่มีฟังก์ชันที่เจ๋งๆ มากขึ้น</p>
+                </li>
             </ol>
         </section>
     </main>
     <hr>
-    <footer><a href="https://cs.sci.tu.ac.th/" target="_blank">คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</a></footer>
+    <footer class="text-center py-4">
+        <a
+            href="https://cs.sci.tu.ac.th/"
+            target="_blank"
+            rel="noopener noreferrer">
+            คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์
+        </a>
+    </footer>
 </body>
 </html>
